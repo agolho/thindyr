@@ -2,43 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-    #draggable {
-      width: 100px;
-      height: 100px;
-      padding: 0.5em;
-      float: left;
-      margin: 10px 10px 10px 0;
-      background-color: yellow;
-    }
-    html,body {
-      height:100%;
-      margin:0;
-    }
-    .content {
-      height:100%;
-      width: 100%;
-      min-width: 100%;
-      min-height:100%;/*for mozilla*/
-    }
-
-    html>body .content {
-      height:auto;
-    }
-    </style>
+    <title>Thindyr</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="draggable " id="draggable">
-      Drag me!
+    <div class="container">
+      <div class="item" id="draggable">
+        Drag me!
+      </div>
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
   <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
-<!--  <script src="js/main.js"></script> -->
-  <script type="text/javascript">
-    $( "#draggable" ).draggable();
-  </script>
+  <script src="js/main.js"></script>
 </html>
