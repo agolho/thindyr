@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    #draggable {
+      width: 100px;
+      height: 100px;
+      padding: 0.5em;
+      float: left;
+      margin: 10px 10px 10px 0;
+      background-color: yellow;
+    }
+    html,body {
+      height:100%;
+      margin:0;
+    }
+    .content {
+      height:100%;
+      width: 100%;
+      min-width: 100%;
+      min-height:100%;/*for mozilla*/
+    }
+
+    html>body .content {
+      height:auto;
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="draggable content" id="draggable">
+      Drag me!
+    </div>
+  </body>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    $( "#draggable" ).draggable();
+  </script>
+</html>
